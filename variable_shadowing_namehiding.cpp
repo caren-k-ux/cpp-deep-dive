@@ -61,4 +61,7 @@ int main()
 
 //some compilers would issue a warning when a variable is shadowed
 //you can avoid shadowing of global variables by using the "g" or "g_" priefix.
+//Shadowing can cause silent runtime bugs because the compiler will not emit an error by default 
+//you can instruct your compiler (like GCC or Clang ) to warn you when shadowing occurs by 
+// g++ -Wshadow main.cpp   *bash
 
