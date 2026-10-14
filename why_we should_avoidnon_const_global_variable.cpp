@@ -144,11 +144,11 @@ That way if your function eve needs to use a different value for some circumstan
 #include <iostream>
 namespace constants
 {
-    constexpr double gravity { 9.8 }[]
+    constexpr double gravity { 9.8 };
 }
 
 //This function can calculate the instant velocity for any graviry value (more useful)
-double instantVelocity()
+double instantVelocity(double time, double graviet)
 {
     return gravity * time;
 
@@ -157,6 +157,8 @@ double instantVelocity()
 int main()
 {
     std::cout << instantVelocity(5, constants::gravity) << '\n';
+    double marsGravity { 3.71 };
+    std::cout << instantVelocity(7, marsGravity) << '\n';
     return 0;
 }
 */
