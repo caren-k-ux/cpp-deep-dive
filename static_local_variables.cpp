@@ -84,3 +84,22 @@ Because they have sttic duration, static local variables that are not explicitly
 //BEST PRACTICE
 //Const static local variables are generally okay to us
 //Non-const static local variables should generally be avoided. if you do use them, ensure the variable never needs to be reset, and isn' used to alter program flow.
+
+#include <iostream>
+
+void incrementAndPrint()
+{
+    static int s_value { 1 };
+    ++s_value;
+    std::cout << s_value << '\n';
+
+}  
+
+int main()
+{
+    incrementAndPrint();
+    incrementAndPrint();
+    incrementAndPrint();
+
+    return 0;
+}
