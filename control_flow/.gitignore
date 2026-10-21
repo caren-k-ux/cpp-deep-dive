@@ -1,0 +1,21 @@
+# Compiled binaries/executables without extensions
+*
+!*.*
+!Makefile
+!README.md
+!.gitignore
+
+# Compiled object and library files
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# VS Code and OS configuration folders
+.vscode/
+.DS_Store
+build/
+bin/
