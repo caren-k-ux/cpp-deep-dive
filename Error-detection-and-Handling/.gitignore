@@ -1,11 +1,9 @@
 # Compiled binaries/executables without extensions
-*
-!*.*
 !Makefile
 !README.md
 !.gitignore
 
-# Compiled object and library files
+# Compiled object and library g
 *.o
 *.obj
 *.so
@@ -19,3 +17,4 @@
 .DS_Store
 build/
 bin/
+
